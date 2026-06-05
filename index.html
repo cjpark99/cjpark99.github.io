@@ -5,128 +5,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="Chanjeong Park is an M.S. and Ph.D. student at Seoul National University working on mobile-server collaboration, edge computing, and efficient AI systems."
+      content="Chanjeong Park is an M.S. and Ph.D. student at Seoul National University researching edge AI systems, mobile-server collaboration, and efficient visual processing."
     >
     <title>Chanjeong Park</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <main class="wrap">
-      <section class="intro" aria-labelledby="name">
-        <div class="intro-text">
-          <h1 id="name">Chanjeong Park</h1>
-          <p>
-            I am an M.S. and Ph.D. student in Electrical and Computer Engineering at
-            <a href="https://en.snu.ac.kr/" target="_blank" rel="noopener">Seoul National University</a>,
-            working in the
-            <a href="https://nxc.snu.ac.kr/" target="_blank" rel="noopener">Networked Computing (NXC) Lab</a>
-            advised by Prof. Kyunghan Lee.
+    <main class="page">
+      <header class="profile">
+        <div class="profile-copy">
+          <p class="affiliation">Seoul National University - Networked Computing Lab</p>
+          <h1>Chanjeong Park</h1>
+          <p class="lead">
+            I am an M.S. and Ph.D. student in Electrical and Computer Engineering
+            at <a href="https://en.snu.ac.kr/" target="_blank" rel="noopener">Seoul National University</a>,
+            advised by Prof. Kyunghan Lee in the
+            <a href="https://nxc.snu.ac.kr/" target="_blank" rel="noopener">Networked Computing (NXC) Lab</a>.
+            My research builds efficient edge AI systems for mobile-server
+            collaboration, real-time visual processing, and collaborative inference.
           </p>
-          <p>
-            My research focuses on mobile-server collaboration for real-time edge
-            computing and efficient DNN systems for visual processing.
-          </p>
-          <p class="links" aria-label="Profile links">
+          <nav class="profile-links" aria-label="Profile links">
             <a href="mailto:cjpark99@snu.ac.kr">Email</a>
             <span>/</span>
+            <a href="https://www.linkedin.com/in/chanjeong-park-0aa73b215/" target="_blank" rel="noopener">LinkedIn</a>
+            <span>/</span>
+            <a href="https://scholar.google.com/citations?user=3ON_bGIAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+            <span>/</span>
             <a href="resume_260605.pdf" target="_blank" rel="noopener">CV</a>
-          </p>
+          </nav>
         </div>
-        <img class="portrait" src="selfie.jpeg" alt="Chanjeong Park">
-      </section>
+        <figure class="photo">
+          <img src="selfie.jpeg" alt="Chanjeong Park">
+        </figure>
+      </header>
 
-      <hr>
-
-      <section aria-labelledby="research">
+      <section class="section" aria-labelledby="research">
         <h2 id="research">Research</h2>
         <p>
-          I build systems that make AI inference practical under the constraints
-          of mobile and edge environments. My current interests include
-          collaborative inference between mobile devices and servers, motion-aware
-          video analytics, offloaded Vision Transformer inference, and
-          mobile-cloud language model systems.
+          My work studies how mobile devices and servers can cooperate under
+          latency, bandwidth, and compute constraints. I am particularly interested
+          in motion-aware video analytics, offloaded Vision Transformer inference,
+          and mobile-cloud language model systems.
         </p>
+        <div class="topics" aria-label="Research topics">
+          <span>Real-time edge computing</span>
+          <span>Mobile-server collaboration</span>
+          <span>Efficient DNN systems</span>
+          <span>Visual processing</span>
+        </div>
       </section>
 
-      <hr>
-
-      <section aria-labelledby="publications">
+      <section class="section" aria-labelledby="publications">
         <h2 id="publications">Publications</h2>
 
         <article class="paper">
-          <h3>
-            <a href="https://dl.acm.org/doi/10.1145/3745756.3809212" target="_blank" rel="noopener">
-              Ouroboros: Instilling Motion Awareness in ViTs for Efficient Video Analytics on the Edge
-            </a>
-          </h3>
-          <p class="authors">
-            <strong>Chanjeong Park</strong>, Donggyu Yang, Sooyoung Kwon,
-            Gibum Park, Carlee Joe-Wong, and Kyunghan Lee
-          </p>
-          <p class="venue">ACM MobiSys 2026, Cambridge, UK</p>
+          <div class="paper-year">2026</div>
+          <div class="paper-body">
+            <h3>
+              <a href="https://dl.acm.org/doi/10.1145/3745756.3809212" target="_blank" rel="noopener">
+                Ouroboros: Instilling Motion Awareness in ViTs for Efficient Video Analytics on the Edge
+              </a>
+            </h3>
+            <p class="authors">
+              <strong>Chanjeong Park</strong>, Donggyu Yang, Sooyoung Kwon,
+              Gibum Park, Carlee Joe-Wong, and Kyunghan Lee
+            </p>
+            <p class="venue">ACM MobiSys, Cambridge, UK</p>
+          </div>
         </article>
 
         <article class="paper">
-          <h3>
-            <a href="https://dl.acm.org/doi/10.1145/3745756.3809224" target="_blank" rel="noopener">
-              SAIL: Redesigning Collaborative Language Inference with a Single Server-to-Mobile Handoff
-            </a>
-          </h3>
-          <p class="authors">
-            Gibum Park, Sanghyun Han, Yonghwa Cho, <strong>Chanjeong Park</strong>,
-            and Kyunghan Lee
-          </p>
-          <p class="venue">ACM MobiSys 2026, Cambridge, UK</p>
+          <div class="paper-year">2026</div>
+          <div class="paper-body">
+            <h3>
+              <a href="https://dl.acm.org/doi/10.1145/3745756.3809224" target="_blank" rel="noopener">
+                SAIL: Redesigning Collaborative Language Inference with a Single Server-to-Mobile Handoff
+              </a>
+            </h3>
+            <p class="authors">
+              Gibum Park, Sanghyun Han, Yonghwa Cho, <strong>Chanjeong Park</strong>,
+              and Kyunghan Lee
+            </p>
+            <p class="venue">ACM MobiSys, Cambridge, UK</p>
+          </div>
         </article>
 
         <article class="paper">
-          <h3>
-            CoActo: CoActive Neural Network Inference Offloading with Fine-grained
-            and Concurrent Execution
-          </h3>
-          <p class="authors">
-            Kyungmin Bin, Jongseok Park, <strong>Chanjeong Park</strong>,
-            Seyeon Kim, and Kyunghan Lee
-          </p>
-          <p class="venue">ACM MobiSys 2024, Tokyo, Japan</p>
+          <div class="paper-year">2024</div>
+          <div class="paper-body">
+            <h3>
+              CoActo: CoActive Neural Network Inference Offloading with Fine-grained
+              and Concurrent Execution
+            </h3>
+            <p class="authors">
+              Kyungmin Bin, Jongseok Park, <strong>Chanjeong Park</strong>,
+              Seyeon Kim, and Kyunghan Lee
+            </p>
+            <p class="venue">ACM MobiSys, Tokyo, Japan</p>
+          </div>
         </article>
       </section>
 
-      <hr>
-
-      <section aria-labelledby="posters">
+      <section class="section" aria-labelledby="posters">
         <h2 id="posters">Posters &amp; Extended Abstracts</h2>
 
-        <article class="paper">
-          <h3>
-            <a href="https://dl.acm.org/doi/10.1145/3812835.3814856" target="_blank" rel="noopener">
-              Accelerating Offloaded ViT Inference via Progressive Refinement
-            </a>
-          </h3>
-          <p class="authors">
-            <strong>Chanjeong Park</strong>, Gibum Park, Carlee Joe-Wong,
-            and Kyunghan Lee
-          </p>
-          <p class="venue">ACM MobiSys 2026 Poster Session, Cambridge, UK</p>
+        <article class="paper compact">
+          <div class="paper-year">2026</div>
+          <div class="paper-body">
+            <h3>
+              <a href="https://dl.acm.org/doi/10.1145/3812835.3814856" target="_blank" rel="noopener">
+                Accelerating Offloaded ViT Inference via Progressive Refinement
+              </a>
+            </h3>
+            <p class="authors">
+              <strong>Chanjeong Park</strong>, Gibum Park, Carlee Joe-Wong,
+              and Kyunghan Lee
+            </p>
+            <p class="venue">ACM MobiSys Poster Session, Cambridge, UK</p>
+          </div>
         </article>
 
-        <article class="paper">
-          <h3>
-            <a href="https://dl.acm.org/doi/10.1145/3812835.3814861" target="_blank" rel="noopener">
-              Selective Semantic Cache Transfer for Mobile-Cloud LLM Inference
-            </a>
-          </h3>
-          <p class="authors">
-            Gibum Park, Sanghyun Han, Yonghwa Cho, <strong>Chanjeong Park</strong>,
-            and Kyunghan Lee
-          </p>
-          <p class="venue">ACM MobiSys 2026 Poster Session, Cambridge, UK</p>
+        <article class="paper compact">
+          <div class="paper-year">2026</div>
+          <div class="paper-body">
+            <h3>
+              <a href="https://dl.acm.org/doi/10.1145/3812835.3814861" target="_blank" rel="noopener">
+                Selective Semantic Cache Transfer for Mobile-Cloud LLM Inference
+              </a>
+            </h3>
+            <p class="authors">
+              Gibum Park, Sanghyun Han, Yonghwa Cho, <strong>Chanjeong Park</strong>,
+              and Kyunghan Lee
+            </p>
+            <p class="venue">ACM MobiSys Poster Session, Cambridge, UK</p>
+          </div>
         </article>
       </section>
 
-      <hr>
-
-      <section aria-labelledby="education">
+      <section class="section" aria-labelledby="education">
         <h2 id="education">Education</h2>
 
         <div class="entry">
@@ -154,9 +170,7 @@
         </div>
       </section>
 
-      <hr>
-
-      <section aria-labelledby="honors">
+      <section class="section" aria-labelledby="honors">
         <h2 id="honors">Honors &amp; Awards</h2>
 
         <div class="entry">
@@ -190,52 +204,27 @@
           </div>
           <time>Jun 2024</time>
         </div>
-
-        <div class="entry">
-          <div>
-            <h3>Ministry of National Defense Award</h3>
-            <p>2020 Open Source Academy for Military.</p>
-          </div>
-          <time>Nov 2020</time>
-        </div>
       </section>
 
-      <hr>
-
-      <section aria-labelledby="experience">
-        <h2 id="experience">Leadership &amp; Teaching</h2>
-
-        <div class="entry">
-          <div>
+      <section class="section two-column" aria-labelledby="service">
+        <div>
+          <h2 id="service">Leadership &amp; Teaching</h2>
+          <div class="entry stacked">
             <h3>Lab Head, Networked Computing (NXC) Lab</h3>
-            <p>Seoul National University.</p>
+            <p>Seoul National University, Jun 2026 - Present.</p>
           </div>
-          <time>Jun 2026 - Present</time>
+          <div class="entry stacked">
+            <h3>Teaching Assistant</h3>
+            <p>Industrial Applications of Electrical and Electronic Technologies, Fall 2024.</p>
+            <p>Introduction to Random Variables and Random Processes, Spring 2024.</p>
+          </div>
         </div>
 
-        <div class="entry">
-          <div>
-            <h3>Teaching Assistant, Industrial Applications of Electrical and Electronic Technologies</h3>
-            <p>Seoul National University. Lead instructor: Adjunct Prof. Byounghoon Kim.</p>
-          </div>
-          <time>Fall 2024</time>
+        <div>
+          <h2>Skills</h2>
+          <p class="skill-line"><strong>Languages:</strong> C/C++, AArch64 ASM, CUDA, Python</p>
+          <p class="skill-line"><strong>Tools:</strong> LaTeX</p>
         </div>
-
-        <div class="entry">
-          <div>
-            <h3>Teaching Assistant, Introduction to Random Variables and Random Processes</h3>
-            <p>Seoul National University. Lecturer: Prof. Kyunghan Lee.</p>
-          </div>
-          <time>Spring 2024</time>
-        </div>
-      </section>
-
-      <hr>
-
-      <section aria-labelledby="skills">
-        <h2 id="skills">Skills</h2>
-        <p><strong>Languages:</strong> C/C++, AArch64 ASM, CUDA, Python</p>
-        <p><strong>Tools:</strong> LaTeX</p>
       </section>
 
       <footer>

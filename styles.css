@@ -49,7 +49,8 @@ body {
 }
 
 .notice-close {
-  grid-column: 1;
+  position: relative;
+  grid-column: 3;
   width: 28px;
   height: 28px;
   border: 0;
@@ -61,10 +62,36 @@ body {
   line-height: 1;
 }
 
+.notice-close::before,
+.notice-close::after {
+  position: absolute;
+  left: 7px;
+  top: 13px;
+  width: 14px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.72);
+  content: "";
+}
+
+.notice-close::before {
+  transform: rotate(45deg);
+}
+
+.notice-close::after {
+  transform: rotate(-45deg);
+}
+
 .notice-close:hover,
 .notice-close:focus-visible {
   background: rgba(255, 255, 255, 0.16);
   outline: none;
+}
+
+.notice-close:hover::before,
+.notice-close:hover::after,
+.notice-close:focus-visible::before,
+.notice-close:focus-visible::after {
+  background: rgba(255, 255, 255, 0.9);
 }
 
 a {
@@ -203,11 +230,11 @@ h2 {
 .badge {
   display: inline-block;
   margin-left: 7px;
-  border: 1px solid rgba(26, 115, 232, 0.28);
+  border: 1px solid rgba(199, 73, 34, 0.32);
   border-radius: 4px;
-  background: #e8f0fe;
+  background: #fff1d6;
   padding: 1px 6px 2px;
-  color: #185abc;
+  color: #a23b16;
   font-size: 11px;
   font-weight: 750;
   line-height: 1.2;
@@ -232,7 +259,11 @@ h2 {
 
 .venue {
   color: var(--muted);
-  font-style: italic;
+}
+
+.venue strong {
+  color: var(--ink);
+  font-weight: 750;
 }
 
 .entry {
@@ -297,7 +328,7 @@ footer {
   }
 
   .notice {
-    grid-template-columns: 34px minmax(0, 1fr) 8px;
+    grid-template-columns: 10px minmax(0, 1fr) 34px;
     min-height: 48px;
     padding: 0 10px;
     font-size: 14px;

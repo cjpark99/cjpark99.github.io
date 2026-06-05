@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <div class="notice" id="internship-notice">
+      <button class="notice-close" type="button" aria-label="Close announcement">X</button>
+      <p>Now looking for internship opportunities in edge AI systems.</p>
+    </div>
+
     <main class="page">
       <header class="profile">
         <div class="profile-copy">
@@ -35,25 +40,9 @@
           </nav>
         </div>
         <figure class="photo">
-          <img src="selfie.jpeg" alt="Chanjeong Park">
+          <img src="profile-360.jpeg" alt="Chanjeong Park">
         </figure>
       </header>
-
-      <section class="section" aria-labelledby="research">
-        <h2 id="research">Research</h2>
-        <p>
-          My work studies how mobile devices and servers can cooperate under
-          latency, bandwidth, and compute constraints. I am particularly interested
-          in motion-aware video analytics, offloaded Vision Transformer inference,
-          and mobile-cloud language model systems.
-        </p>
-        <div class="topics" aria-label="Research topics">
-          <span>Real-time edge computing</span>
-          <span>Mobile-server collaboration</span>
-          <span>Efficient DNN systems</span>
-          <span>Visual processing</span>
-        </div>
-      </section>
 
       <section class="section" aria-labelledby="publications">
         <h2 id="publications">Publications</h2>
@@ -65,6 +54,7 @@
               <a href="https://dl.acm.org/doi/10.1145/3745756.3809212" target="_blank" rel="noopener">
                 Ouroboros: Instilling Motion Awareness in ViTs for Efficient Video Analytics on the Edge
               </a>
+              <span class="badge">New</span>
             </h3>
             <p class="authors">
               <strong>Chanjeong Park</strong>, Donggyu Yang, Sooyoung Kwon,
@@ -81,6 +71,7 @@
               <a href="https://dl.acm.org/doi/10.1145/3745756.3809224" target="_blank" rel="noopener">
                 SAIL: Redesigning Collaborative Language Inference with a Single Server-to-Mobile Handoff
               </a>
+              <span class="badge">New</span>
             </h3>
             <p class="authors">
               Gibum Park, Sanghyun Han, Yonghwa Cho, <strong>Chanjeong Park</strong>,
@@ -94,8 +85,10 @@
           <div class="paper-year">2024</div>
           <div class="paper-body">
             <h3>
-              CoActo: CoActive Neural Network Inference Offloading with Fine-grained
-              and Concurrent Execution
+              <a href="https://dl.acm.org/doi/abs/10.1145/3643832.3661885" target="_blank" rel="noopener">
+                CoActo: CoActive Neural Network Inference Offloading with Fine-grained
+                and Concurrent Execution
+              </a>
             </h3>
             <p class="authors">
               Kyungmin Bin, Jongseok Park, <strong>Chanjeong Park</strong>,
@@ -116,6 +109,7 @@
               <a href="https://dl.acm.org/doi/10.1145/3812835.3814856" target="_blank" rel="noopener">
                 Accelerating Offloaded ViT Inference via Progressive Refinement
               </a>
+              <span class="badge">New</span>
             </h3>
             <p class="authors">
               <strong>Chanjeong Park</strong>, Gibum Park, Carlee Joe-Wong,
@@ -132,6 +126,7 @@
               <a href="https://dl.acm.org/doi/10.1145/3812835.3814861" target="_blank" rel="noopener">
                 Selective Semantic Cache Transfer for Mobile-Cloud LLM Inference
               </a>
+              <span class="badge">New</span>
             </h3>
             <p class="authors">
               Gibum Park, Sanghyun Han, Yonghwa Cho, <strong>Chanjeong Park</strong>,
@@ -231,5 +226,14 @@
         Last updated June 2026.
       </footer>
     </main>
+
+    <script>
+      const notice = document.getElementById("internship-notice");
+      const closeButton = notice.querySelector(".notice-close");
+
+      closeButton.addEventListener("click", () => {
+        notice.hidden = true;
+      });
+    </script>
   </body>
 </html>

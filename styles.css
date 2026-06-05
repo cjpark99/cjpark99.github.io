@@ -27,6 +27,46 @@ body {
   line-height: 1.6;
 }
 
+.notice {
+  display: grid;
+  grid-template-columns: 36px minmax(0, 1fr) 36px;
+  align-items: center;
+  min-height: 44px;
+  background: var(--link);
+  color: #ffffff;
+  padding: 0 14px;
+  font-size: 15px;
+  font-weight: 650;
+}
+
+.notice[hidden] {
+  display: none;
+}
+
+.notice p {
+  grid-column: 2;
+  text-align: center;
+}
+
+.notice-close {
+  grid-column: 1;
+  width: 28px;
+  height: 28px;
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  font: inherit;
+  line-height: 1;
+}
+
+.notice-close:hover,
+.notice-close:focus-visible {
+  background: rgba(255, 255, 255, 0.16);
+  outline: none;
+}
+
 a {
   color: var(--link);
   text-decoration: none;
@@ -128,22 +168,6 @@ h2 {
   letter-spacing: 0;
 }
 
-.topics {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 10px;
-  margin-top: 16px;
-}
-
-.topics span {
-  border: 1px solid var(--line);
-  border-radius: 4px;
-  background: var(--wash);
-  padding: 3px 8px;
-  color: var(--muted);
-  font-size: 14px;
-}
-
 .paper {
   display: grid;
   grid-template-columns: 56px minmax(0, 1fr);
@@ -174,6 +198,21 @@ h2 {
   font-size: 17px;
   line-height: 1.35;
   font-weight: 700;
+}
+
+.badge {
+  display: inline-block;
+  margin-left: 7px;
+  border: 1px solid rgba(26, 115, 232, 0.28);
+  border-radius: 4px;
+  background: #e8f0fe;
+  padding: 1px 6px 2px;
+  color: #185abc;
+  font-size: 11px;
+  font-weight: 750;
+  line-height: 1.2;
+  text-transform: uppercase;
+  vertical-align: 0.12em;
 }
 
 .authors,
@@ -255,6 +294,13 @@ footer {
   .page {
     width: min(100% - 28px, var(--max));
     padding-top: 34px;
+  }
+
+  .notice {
+    grid-template-columns: 34px minmax(0, 1fr) 8px;
+    min-height: 48px;
+    padding: 0 10px;
+    font-size: 14px;
   }
 
   .profile {

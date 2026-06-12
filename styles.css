@@ -54,10 +54,15 @@ body {
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 0.18em;
+  white-space: nowrap;
 }
 
 .notice a:hover {
   text-decoration-thickness: 2px;
+}
+
+.notice-prefix {
+  white-space: nowrap;
 }
 
 .notice-close {
@@ -326,10 +331,10 @@ h2 {
   margin-top: 8px;
 }
 
-.internship-section {
-  border-bottom: 0;
+.section.internship-section {
   margin-top: 8px;
   border: 1px solid #d8e5fb;
+  border-bottom: 1px solid #d8e5fb;
   border-radius: 8px;
   background: linear-gradient(180deg, #fbfdff 0%, #ffffff 100%);
   padding: 26px;
@@ -416,7 +421,7 @@ footer {
     grid-template-columns: 10px minmax(0, 1fr) 34px;
     min-height: 56px;
     padding: 0 10px;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .profile {

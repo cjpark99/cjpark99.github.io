@@ -48,7 +48,8 @@ body {
   text-align: center;
 }
 
-.notice a {
+.notice a,
+.notice a:visited {
   color: #ffffff;
   text-decoration: underline;
   text-decoration-thickness: 1px;
@@ -197,13 +198,6 @@ h1 {
   border-bottom: 0;
 }
 
-.section-kicker {
-  margin-bottom: 3px;
-  color: var(--link);
-  font-size: 13px;
-  font-weight: 750;
-}
-
 h2 {
   margin-bottom: 16px;
   color: var(--ink);
@@ -341,10 +335,6 @@ h2 {
   padding: 26px;
 }
 
-.internship-heading h2 {
-  margin-bottom: 14px;
-}
-
 .internship-note {
   color: var(--body);
 }
@@ -356,7 +346,7 @@ h2 {
   border-top: 1px solid var(--line);
 }
 
-.internship-list div {
+.internship-item {
   display: grid;
   grid-template-columns: 160px minmax(0, 1fr);
   gap: 18px;
@@ -364,17 +354,22 @@ h2 {
   border-bottom: 1px solid var(--line);
 }
 
-.internship-list dt {
+.internship-item h3 {
   color: var(--ink);
   font-size: 14px;
   font-weight: 750;
 }
 
-.internship-list dd {
+.internship-item ul {
   margin: 0;
+  padding-left: 18px;
   color: var(--muted);
   font-size: 14.5px;
   line-height: 1.55;
+}
+
+.internship-item li + li {
+  margin-top: 3px;
 }
 
 .back-to-top {
@@ -461,7 +456,7 @@ footer {
     padding: 20px;
   }
 
-  .internship-list div {
+  .internship-item {
     grid-template-columns: 1fr;
     gap: 3px;
   }

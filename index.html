@@ -14,7 +14,6 @@
   <body>
     <div class="notice" id="top">
       <p><span class="notice-prefix">Now looking for</span> <wbr><a href="#looking-for-internships">internship opportunities</a>!</p>
-      <button class="notice-close" type="button" aria-label="Close announcement"></button>
     </div>
 
     <main class="page">
@@ -283,14 +282,5 @@
         Last updated June 2026.
       </footer>
     </main>
-
-    <script>
-      const notice = document.getElementById("top");
-      const closeButton = notice.querySelector(".notice-close");
-
-      closeButton.addEventListener("click", () => {
-        notice.hidden = true;
-      });
-    </script>
   </body>
 </html>

@@ -31,11 +31,11 @@ body {
   display: grid;
   grid-template-columns: 36px minmax(0, 1fr) 36px;
   align-items: center;
-  min-height: 44px;
+  min-height: 58px;
   background: var(--link);
   color: #ffffff;
   padding: 0 14px;
-  font-size: 15px;
+  font-size: 22px;
   font-weight: 650;
 }
 
@@ -414,9 +414,9 @@ footer {
 
   .notice {
     grid-template-columns: 10px minmax(0, 1fr) 34px;
-    min-height: 48px;
+    min-height: 56px;
     padding: 0 10px;
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .profile {
